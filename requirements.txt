@@ -1,0 +1,10 @@
+matplotlib
+numpy
+pandas
+plotly
+scipy
+openpyxl
+ta
+git+https://github.com/rongardF/tvdatafeed.git
+yfinance
+ipeadatapy
