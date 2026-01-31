@@ -24,31 +24,32 @@ Veja o guia simples de uso e exemplos em [Usage](USAGE.md)
 
 Notebooks da pasta `1.Directional` com estratégias direcionais clássicas e variações de tendência e carry.
 
-- Buy and Hold — backtest de buy and hold em contratos de futuros. [1.Buy&Hold](1.Directional/1.Buy&Hold.ipynb)
+- Buy and Hold — backtest de buy and hold em contratos de futuros. [1.Buy&Hold](1.Directional/1.Buy&Hold.ipynb) 
 - Buy and Hold with Risk Scaling — buy and hold com ajuste de risco fixo. [2.Buy&Hol_Risk_Scaling](1.Directional/2.Buy&Hol_Risk_Scaling.ipynb)
 - Buy and Hold with Variable Risk Scaling — ajuste de risco variável ao longo do tempo. [3.Buy&Hold_Variable_Risk_Scaling](1.Directional/3.Buy&Hold_Variable_Risk_Scaling.ipynb)
-- Buy and Hold Portfolio with Variable Risk — portfólio com escalonamento de risco variável. [4.Buy&Hold_Portifolio_Variable_Risk](1.Directional/4.Buy&Hold_Portifolio_Variable_Risk.ipynb)
-- Trend Filter Long — filtro de tendência para posição somente long. [5.Trend_Filter_Long](1.Directional/5.Trend_Filter_Long.ipynb)
-- Trend Filter Long and Short — filtro de tendência para posições long e short. [6.Trend_Filter_Long&Short](1.Directional/6.Trend_Filter_Long&Short.ipynb)
-- Slow Trend Strength Filter — força de tendência com sinal mais lento. [7.Slow_Trend_Strength_Filter](1.Directional/7.Slow_Trend_Strength_Filter.ipynb)
+- Buy and Hold Portfolio with Variable Risk — portfólio com escalonamento de risco variável. [4.Buy&Hold_Portifolio_Variable_Risk](1.Directional/4.Buy&Hold_Portifolio_Variable_Risk.ipynb) Conceito de IDM grau de diversificação, portifolio Jumbo, seguindo uma tabela. O IDM é um fator de ajuste do Position Sizing dado a volatilidade do dos resultados ( risco )
+  Entramos no cenario de ajustar a posição de acordo com o risco (da variabilidade do downdown)
+- Trend Filter Long — filtro de tendência para posição somente long. [5.Trend_Filter_Long](1.Directional/5.Trend_Filter_Long.ipynb) Filtro longo ( media movel ) para tirar o ruido. aqui e ele só compra.
+- Trend Filter Long and Short — filtro de tendência para posições long e short. [6.Trend_Filter_Long&Short](1.Directional/6.Trend_Filter_Long&Short.ipynb) Filtro longo ( media movel 200) para tirar o ruido. aqui e ele só compra.
+- Slow Trend Strength Filter — força de tendência com sinal mais lento. [7.Slow_Trend_Strength_Filter](1.Directional/7.Slow_Trend_Strength_Filter.ipynb) Filtro de Elders, filtro de calmon ou filtro de medias
 - Fast Trend Strength Filter — força de tendência com sinal mais rápido. [8.Fast_Trend_Strength_Filter](1.Directional/8.Fast_Trend_Strength_Filter.ipynb)
 - Multiple Trend Strength Filter — combinação de filtros de força de tendência. [9.Multiple_Trend_Strength_Filter](1.Directional/9.Multiple_Trend_Strength_Filter.ipynb)
-- Basic Carry — estratégia básica de carry. [10.Basic_Carry](1.Directional/10.Basic_Carry.ipynb)
-- Basic Carry and Trend — combinação simples de carry e tendência. [11.Basic_Carry&Trend](1.Directional/11.Basic_Carry&Trend.ipynb)
+- Basic Carry — estratégia básica de carry. [10.Basic_Carry](1.Directional/10.Basic_Carry.ipynb) Aumenta e diminui a posição se o carry estiver positivo ou negativo.
+- Basic Carry and Trend — combinação simples de carry e tendência. [11.Basic_Carry&Trend](1.Directional/11.Basic_Carry&Trend.ipynb) ultiliza as 2 formas de carrego e tendencia.
 
 # Trend Following and Carry
 
 Notebooks da pasta `2.Trend_Following_and_Carry` focados em modelos de tendência, carry e alocação entre sinais.
 
-- Adjusted Trend — ajuste de sinal de tendência para reduzir ruído. [12.Adjusted_trend](2.Trend_Following_and_Carry/12.Adjusted_trend.ipynb)
-- Trend Carry Risk Regimes — tendência e carry com regimes de risco. [13.Trend_Carry_Risk_Regimes](2.Trend_Following_and_Carry/13.Trend_Carry_Risk_Regimes.ipynb)
-- Spot Trend — tendência usando preço spot/sintético. [14.Spot_Trend](2.Trend_Following_and_Carry/14.Spot_Trend.ipynb)
-- Seasonal Carry — sinal de carry com sazonalidade. [15.Seasonal_Carry](2.Trend_Following_and_Carry/15.Seasonal_Carry.ipynb)
-- Trend and Carry Allocation — alocação entre sinais de tendência e carry. [16.Trend&Carry_Alocation](2.Trend_Following_and_Carry/16.Trend&Carry_Alocation.ipynb)
-- Normalized Trend — normalização do sinal de tendência. [17.Normalized_Trend](2.Trend_Following_and_Carry/17.Normalized_Trend.ipynb)
-- Trend Following Assets — tendência aplicada por classe de ativo. [18.Trend_Following_Assets](2.Trend_Following_and_Carry/18.Trend_Following_Assets.ipynb)
-- Trend Following Relative Assets — tendência relativa entre ativos. [19.Trend_Following_Relative_Assets](2.Trend_Following_and_Carry/19.Trend_Following_Relative_Assets.ipynb)
-- Carry Relative Assets — carry relativo entre ativos. [20.Carry_Relative_Assets](2.Trend_Following_and_Carry/20.Carry_Relative_Assets.ipynb)
+- Adjusted Trend — ajuste de sinal de tendência para reduzir ruído. [12.Adjusted_trend](2.Trend_Following_and_Carry/12.Adjusted_trend.ipynb) Ajuste da média pela volatilidade. Media das medias/volatilidade.
+- Trend Carry Risk Regimes — tendência e carry com regimes de risco. [13.Trend_Carry_Risk_Regimes](2.Trend_Following_and_Carry/13.Trend_Carry_Risk_Regimes.ipynb) Ele usa o carry neste.
+- Spot Trend — tendência usando preço spot/sintético. [14.Spot_Trend](2.Trend_Following_and_Carry/14.Spot_Trend.ipynb) ideia do spot/Trend, o valor spot  ele cria o spot sintentico, calcula diferença em pontos e dive pela volatilidade
+- Seasonal Carry — sinal de carry com sazonalidade. [15.Seasonal_Carry](2.Trend_Following_and_Carry/15.Seasonal_Carry.ipynb) Conceito de sazonalidade, a cada ano e mês aplicando no position size
+- Trend and Carry Allocation — alocação entre sinais de tendência e carry. [16.Trend&Carry_Alocation](2.Trend_Following_and_Carry/16.Trend&Carry_Alocation.ipynb) A sazonalidade do carry 
+- Normalized Trend — normalização do sinal de tendência. [17.Normalized_Trend](2.Trend_Following_and_Carry/17.Normalized_Trend.ipynb) Idea do preço normalizado divide o preço pela volatilidade, tira um pouco pelo ruido.
+- Trend Following Assets — tendência aplicada por classe de ativo. [18.Trend_Following_Assets](2.Trend_Following_and_Carry/18.Trend_Following_Assets.ipynb) Bom para pegar a rotação de setores, ele reduz a posição quando esta indo mau.
+- Trend Following Relative Assets — tendência relativa entre ativos. [19.Trend_Following_Relative_Assets](2.Trend_Following_and_Carry/19.Trend_Following_Relative_Assets.ipynb) Essa rotaciona ainda mais rapido, pq tira da estrategia que esta inndo pior e aumenta a maior. 
+- Carry Relative Assets — carry relativo entre ativos. [20.Carry_Relative_Assets](2.Trend_Following_and_Carry/20.Carry_Relative_Assets.ipynb) Essa rotaciona ainda mais rapido, pq tira da estrategia que esta inndo pior e aumenta a maior. 
 
 # Advanced Directional
 
